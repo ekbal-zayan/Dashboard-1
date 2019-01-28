@@ -1,0 +1,310 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.white {
+  color: white;
+}
+
+.primary-color {
+  color: #0C2462;
+}
+
+.secondry-color {
+  color: #A3AFD7 !important;
+}
+
+.container-95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-80 {
+  width: 80%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+header {
+  background-color: #0C2462;
+  height: auto;
+  font-size: 18px;
+}
+
+header article {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+article .pagesName {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notif .far {
+  font-size: 25px;
+
+}
+
+.notif .num {
+  width: 17px;
+  height: 20px;
+  background: #70C6E1;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  right: 51%;
+}
+
+.pagesName a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #fff;
+  position: relative;
+}
+
+header .logo {
+  width: 90px;
+  height: 45px;
+}
+
+.second-header {
+  background-color: #1F3799;
+  height: auto;
+  font-size: 15px;
+}
+
+.pagesName .rectangle {
+  background-color: #4C5FAC;
+  border-radius: 5px;
+  border-radius: 31px;
+  padding: 8px 20px;
+}
+
+.humburger,
+.humburger .icons {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+}
+
+.humburger .stream i:first-child {
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+  padding-right: 10px;
+  margin: 15px 0;
+
+}
+
+.stream h1,
+.stream h2 {
+  display: inline-block;
+  font-size: x-large;
+  margin: 20px 0;
+}
+
+.stream h2 {
+  font-size: 20px;
+}
+
+.add,
+.export,
+.calender,
+.filter {
+  padding-right: 6vh;
+}
+
+.calender {
+  position: relative;
+}
+
+.calender label {
+  transition: all .4s;
+}
+
+.calender input {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  opacity: 0.0;
+  cursor: pointer;
+}
+
+main {
+  background-color: #F7F7F7;
+  height: auto;
+}
+
+.voda h3,
+form,
+.voda section {
+  display: inline-block;
+}
+
+.voda select {
+  background-color: #F7F7F7;
+  padding: 5px 5px;
+  width: 35vh;
+  height: 7vh;
+  border-radius: 5px;
+  border: 2px solid #999999;
+  margin: 20px 10px;
+}
+
+main .grid,
+main .grid .tweets {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: minmax(100px, auto);
+}
+
+main .grid .twitter,
+main .grid .map,
+main .grid .fb,
+.tweets div {
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  align-items: baseline;
+}
+
+.tweets div {
+  grid-template-columns: 5fr 1fr;
+
+}
+
+.twitter .stream i,
+.map .stream i,
+.tweets .stream i {
+  width: 30px;
+  height: 15px;
+  padding: 5px 0px;
+  border-radius: 50%;
+  background: #70C6E1;
+  color: #fff;
+  border: 2px solid #A3AFD7;
+  text-align: center;
+  margin-right: 10px;
+
+}
+
+.twitter .fa-bars,
+.fb .fa-bars,
+.map .fa-bars,
+.tweets .fa-bars {
+  float: right;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+.twitter .stream p,
+.tweets .stream p {
+  margin: 0px 0;
+  line-height: 0px;
+}
+
+.twitter .stream p span,
+.fb .stream p span,
+.map .stream p span,
+.dropdown-content a span i:nth-last-of-type(1) {
+  padding-right: 1em;
+
+}
+
+main .grid .tweets {
+  grid-column-gap: 0.4em;
+  grid-row-gap: 1em;
+
+}
+
+.fb .stream i,
+.tweets div:nth-of-type(2) .stream i:nth-of-type(1) {
+  width: 30px;
+  height: 15px;
+  padding: 7px 0px;
+  border-radius: 50%;
+  background: #0C2462;
+  color: #fff;
+  border: 2px solid #A3AFD7;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.tweets .minTweets {
+  position: relative;
+}
+
+.tweets .minTweets section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 11vh;
+  font-size: 17px;
+}
+
+.minTweets section:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.minTweets section span:nth-of-type(2) {
+  color: green;
+}
+
+/* Dropdown i */
+.dropI {
+  color: #A3AFD7;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 27px;
+  top: 32px;
+}
+
+.dropdown-content a {
+  color: #A3AFD7;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  border: 1px solid #dddddd73;
+  border-radius: 10px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block !important;
+}

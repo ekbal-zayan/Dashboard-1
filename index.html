@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fontawesome-free-5.6.3-web\css\all.css">
+  <link rel="stylesheet" href="js/jquery-ui.min.css">
+  
+  <title>Dashboard Social HUB 1</title>
+</head>
+
+<body>
+  <header>
+    <article class="container-95">
+      <section>
+        <ul class="pagesName">
+          <li><img src="imgs/logo.png" alt="logo" class="logo"></li>
+          <li><a href="#"> Analytics</a> </li>
+          <li><a href="#" class="secondry-color">Compaigns</a></li>
+          <li><a href="#" class="secondry-color">Engagement</a></li>
+          <li><a href="#" class="secondry-color">Role&Permissions</a></li>
+          <li><a href="#" class="secondry-color">Organization</a></li>
+        </ul>
+      </section>
+      <section class="">
+        <ul class="pagesName">
+          <li class="notif"><a href="#"><i class="far fa-bell " id="bell"></i><span class="num">3</span></a></li>
+          <li class="notif"><a href="#"><i class="far fa-envelope " id="envelope"></i><span class="num">1</span></a></li>
+
+        </ul>
+
+      </section>
+    </article>
+  </header>
+  <div class="second-header">
+    <article class="container-95">
+      <ul class="pagesName">
+        <li>
+          <a href="#" class="rectangle">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Streams</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Comparative</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Influencers</a>
+        </li>
+      </ul>
+    </article>
+  </div>
+  <div class=" container-95">
+    <article class="humburger primary-color">
+      <section class="stream">
+        <i class="fas fa-bars "></i>
+        <h1 class="">Stream Monitoring Dashboard</h1>
+      </section>
+      <section class="icons">
+        <span class="add">
+          <i class="fas fa-plus"></i>
+          <span>Add</span>
+        </span>
+        <span class="export">
+          <i class="fas fa-share-square"></i>
+          <span>Export</span>
+        </span>
+        <span class="calender">
+          <input type="date" id="datepicker" name="date">
+          <label for="datepicker"><i class="fas fa-calendar-alt"></i> </label>
+
+          <span>Date</span>
+        </span>
+
+        <span class="filter">
+          <i class="fas fa-filter"></i>
+          <span>Filter by platform</span>
+          <i class="fas fa-sort-down"></i>
+        </span>
+      </section>
+
+    </article>
+  </div>
+  <main>
+    <article class="voda container-95  primary-color">
+      <section>
+        <h3>Stream</h3>
+        <form action="/action_page.php">
+          <select name="stream" class="secondry-color">
+            <option value="vodafone">Vodafone</option>
+            <option value="orange">Orange</option>
+            <option value="we">We</option>
+            <option value="etsalat">Etsalat</option>
+          </select>
+        </form>
+      </section>
+
+      <section>
+        <h3>Filter</h3>
+        <form action="/action_page.php">
+          <select name="filter" class="secondry-color">
+            <option value="none">None</option>
+            <option value="yes">Yes</option>>
+          </select>
+        </form>
+      </section>
+    </article>
+    <article class="grid container-95  primary-color">
+
+
+      <section class="twitter">
+        <article class="stream">
+          <i class="fab fa-twitter"></i>
+          <h2 class="">Twitter Sentiment</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div id="donutchart" style="width:500px; height: 600px; margin-top: 10px;
+          "></div>
+      </section>
+      <section class="tweets">
+        <div>
+          <article class="stream">
+            <i class="fab fa-twitter"></i>
+            <h2 class="">Twitter Sentiment</h2>
+            <p class="secondry-color"><span>Last month</span></p>
+          </article>
+          <article class="dropdown">
+            <i class="fas fa-bars " id="toggle" class="dropI"></i>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"><span><i class="fas fa-cog"></i> </span><span> Setting</span></a>
+              <a href="#"><span><i class="fas fa-sync-alt"></i> </span><span> Reload</span></a>
+              <a href="#"><span><i class="fas fa-trash-alt"></i> </span><span> Delete</span></a>
+            </div>
+          </article>
+          <article class="minTweets">
+            <section>
+              <span class="secondry-color">Total</span>
+              <span class="secondry-color" style="
+          position: absolute;
+          right: -19%;
+      ">Change
+                during last week</span>
+            </section>
+            <section>
+              <span>68.934 K</span>
+              <span><i class="fas fa-long-arrow-alt-up"></i> 300</span>
+            </section>
+          </article>
+        </div>
+
+        <div>
+          <article class="stream">
+            <i class="fab fa-facebook-f"></i>
+            <h2 class="">FB Comments Count</h2>
+            <p class="secondry-color"><span>Last month</span></p>
+          </article>
+          <article><i class="fas fa-bars "></i></article>
+          <article class="minTweets">
+            <section>
+              <span class="secondry-color">Total</span>
+              <span class="secondry-color" style="
+        position: absolute;
+        right: -19%;
+    ">Change during
+                last week</span>
+            </section>
+            <section>
+              <span>60.600 K</span>
+              <span><i class="fas fa-long-arrow-alt-up"></i> 200</span>
+            </section>
+          </article>
+        </div>
+        <div>
+          <article class="stream">
+            <i class="fab fa-twitter"></i>
+            <h2 class="">Twitter Sentiment</h2>
+            <p class="secondry-color"><span>Last month</span></p>
+          </article>
+          <article><i class="fas fa-bars "></i></article>
+          <article class="minTweets">
+            <section>
+              <span class="secondry-color">Total</span>
+              <span class="secondry-color" style="
+          position: absolute;
+          right: -19%;
+      ">Change
+                during last week</span>
+            </section>
+            <section>
+              <span>60.934 K</span>
+              <span><i class="fas fa-long-arrow-alt-up"></i> 200</span>
+            </section>
+          </article>
+        </div>
+      </section>
+      <section class="map">
+        <article class="stream">
+          <i class="fab fa-twitter"></i>
+          <h2 class="">Map Chart Widget</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div id="regions_div" style="width: 500px; height: 500px;overflow: hidden;
+        "></div>
+
+      </section>
+
+      <section class="fb">
+        <article class="stream">
+          <i class="fab fa-facebook-f"></i>
+          <h2 class="">FB Sentiments Of Comments</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto; width: -webkit-fill-available;"></div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMPEv227N_BIOsfXjDSbBRxUcedNvIcS4&callback=initMap">
+  </script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/canvasjs.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
